@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   private
 
   def detect_mobile_variant
-    request.variant = :mobile if request.user_agent =~ /iphone/
+    request.variant = :mobile if request.user_agent =~ /iPhone/
   end
 end
 
